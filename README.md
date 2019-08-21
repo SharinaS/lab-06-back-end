@@ -12,6 +12,9 @@ This is backend for a frontend application designed to allow users to access wea
 2. npm install -S express dotenv
 3. npm install -S cors
 
+for working with APIs:
+4. npm install -S superagent
+
 ### Front End app exists here:
 https://codefellows.github.io/code-301-guide/curriculum/city-explorer-app/front-end/
 
