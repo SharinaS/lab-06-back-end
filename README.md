@@ -40,6 +40,7 @@ This application was designed with JavaScript
 
 ## Credits and Collaborations
 * Susanna Lakey
+* Elle Young
 
 # Features
 Number and name of feature: Location and Weather
