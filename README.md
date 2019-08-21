@@ -1,25 +1,22 @@
 ## City Explorer
 
-
-Number and name of feature: ________________________________
-
-Estimate of time needed to complete: _____
-
-Start time: _____
-
-Finish time: _____
-
-Actual time needed to complete: _____
-
-
-# lab-06-back-end**Author**: Your Name Goes Here
+# lab-06-back-end**Author**: Sharina Stubbs
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+### Into terminal, install the following:
+1. npm init -y
+2. npm install -S express dotenv
+3. npm install -S cors
+
+### Front End app exists here:
+https://codefellows.github.io/code-301-guide/curriculum/city-explorer-app/front-end/
+
+### To start server:
+Type into terminal: <nodemon>, then, to restart at any time, enter `rs`
 
 ## Architecture
 This application was designed with JavaScript
@@ -31,13 +28,25 @@ This application was designed with JavaScript
 
 08-20-2019 10:00am - Created object literal to pull data from geo.json
 
-08-20-2019 10:15am - Made object literal into a constructor function and created a new instance of the location data which is appearing and the route is responsding in the deployed static client.
+08-20-2019 10:15am - Made object literal into a constructor function and created a new instance of the location data which is appearing and the route is responding in the deployed static client.
 
-08-20-2019 10:35am - Deployed Heroku.
+08-20-2019 10:35am - Deployed to Heroku.
 
-08-20-2019 10:35am - Weather data time is now converted from milliseconds into a date.
+08-20-2019 1:50pm - Weather data time is now converted from milliseconds into a date.
 
 
 ## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
+* Susanna Lakey
+
+# Features
+Number and name of feature: Location and Weather
+
+Estimate of time needed to complete: 4 hours
+
+Start time: 9am
+
+Finish time: 2pm, minus 1 hour, plus another 45 min
+
+Actual time needed to complete: 4 hours 45 min
+
+
