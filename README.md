@@ -4,7 +4,7 @@
 **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
+This is backend for a frontend application designed to allow users to access weather for the location that is asked for. This backend accesses JSON data stored locally to be supplied to the frontend in a readable format
 
 ## Getting Started
 ### Into terminal, install the following:
