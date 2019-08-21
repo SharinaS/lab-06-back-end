@@ -61,3 +61,19 @@ app.get('/weather', (request, response) => {
 app.listen(PORT, () => { console.log(`app is up on PORT ${PORT}`) });
 
 
+// Event Data
+// Write constructor function
+
+// app.get for /events
+  // write urlToVisit based on format for API (add API key for events to .env)
+
+  //superagent.get arrow function
+  // console.log to see what the api bring back.
+  // create variables that access the data we need to find - link, name, data, summary
+  // response.send
+  // catch error
+
+
+
+// commit messages with initials, and when making pull request
+
