@@ -21,7 +21,7 @@ app.get('/location', (request, response) => {
   const urlToVisit = `https://maps.googleapis.com/maps/api/geocode/json?address=${searchQuery}&key=${process.env.GOOGLE_MAPS}`;
   // superagent.get('url as a string');
   superagent.get(urlToVisit).then(responseFromSuper => {
-    console.log('stuff', responseFromSuper.body);
+    //console.log('stuff', responseFromSuper.body);
     // replaced geoData required with the data in the body of my superagent response
     const geoData = responseFromSuper.body;
     const specificGeoData = geoData.results[0];
@@ -47,7 +47,7 @@ app.get('/weather', (request, response) => {
   const urlToVisit = `https://api.darksky.net/forecast/${process.env.WEATHER_API_KEY}/${lat},${lng}`;
 
   superagent.get(urlToVisit).then(responseFromSuper => {
-    console.log('stuff', responseFromSuper.body);
+    //console.log('stuff', responseFromSuper.body);
     const darkskyData = responseFromSuper.body;
     const dailyData = darkskyData.daily.data.map(value => new WeatherGetter(value));
 
@@ -58,11 +58,26 @@ app.get('/weather', (request, response) => {
   });
 })
 
-app.listen(PORT, () => { console.log(`app is up on PORT ${PORT}`) });
+
 
 
 // Event Data
 // Write constructor function
+function EventFinder(link, name, date, summary){
+  this.link = link; 
+  this.name = name;
+  this.date = date;
+  this.summary = summary;
+
+}
+app.get('/events', (request, response) => {
+  const urlToVisit = `https://www.eventbriteapi.com/v3/events/search?location.longitude=${lng}&location.latitude=${lat}&token=${process.env.EVENTBRITE_API_KEY}`;
+  superagent.get(urlToVisit).then(responseFromSuper => {
+    console.log('things', responseFromSuper.body.events[0]);
+  })
+
+})
+
 
 // app.get for /events
   // write urlToVisit based on format for API (add API key for events to .env)
@@ -77,3 +92,4 @@ app.listen(PORT, () => { console.log(`app is up on PORT ${PORT}`) });
 
 // commit messages with initials, and when making pull request
 
+app.listen(PORT, () => { console.log(`app is up on PORT ${PORT}`) });
