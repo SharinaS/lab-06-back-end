@@ -8,12 +8,20 @@ This is backend for a frontend application designed to allow users to access wea
 
 ## Getting Started
 ### Into terminal, install the following:
-1. npm init -y
+<!-- 1. npm init -y
 2. npm install -S express dotenv
 3. npm install -S cors
 
 for working with APIs:
-4. npm install -S superagent
+4. npm install -S superagent -->
+
+If you copy the code down to your machine, simply type npm install, and will find package dependencies. This will install all packages needed.
+
+Do a touch .env to create a file, then within that .env file:
+1. add PORT=port_number
+2. Add an environment variable to your server named `EVENTBRITE_API_KEY `,
+3. Add an environment variable to your server named `WEATHER_API_KEY`, and use it appropriately in your code. 
+4. Add an environment variable to your server named `GEOCODE_API_KEY `, and use it appropriately in your code.
 
 ### Front End app exists here:
 https://codefellows.github.io/code-301-guide/curriculum/city-explorer-app/front-end/
@@ -24,6 +32,7 @@ Type into terminal: <nodemon>, then, to restart at any time, enter `rs`
 ## Architecture
 This application was designed with JavaScript
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+
 
 ## Change Log
 
